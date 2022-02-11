@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Detail</title>
+</head>
+<body>
+    <ul>
+        <li><a href="#">Yeni Post</a></li>
+    </ul>
+    <p>{{ magaza.name }} {{ magaza.category }}</p>
+    {% for post in posts %}
+    <p>
+    {{ post.title }} {{ post.price }} {{ post.publishing_datetime }} {{ post.file }} {{ post.info }}
+    </p>
+    {% endfor %}
+</body>
+</html>
